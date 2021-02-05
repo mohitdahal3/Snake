@@ -58,13 +58,6 @@ function draw() {
 //kun key handa kata jani ra mathi jadai xa vane direct tala jana na dini algorithm is below
 
 function keyPressed() {
-    switch (key) {
-        case 'a':
-            if (snake.xSpeed != 1) {
-                snake.xSpeed = -1;
-                snake.ySpeed = 0;
-            }
-            break;
 
         if(key=='a' && snake.xSpeed != 1){
             snake.xSpeed = -1;
