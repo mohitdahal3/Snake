@@ -1,4 +1,3 @@
-
 //chaini variables ko declaration 
 
 let snake;
@@ -58,38 +57,20 @@ function draw() {
 //kun key handa kata jani ra mathi jadai xa vane direct tala jana na dini algorithm is below
 
 function keyPressed() {
-    switch (key) {
-        case 'a':
-            if (snake.xSpeed != 1) {
-                snake.xSpeed = -1;
-                snake.ySpeed = 0;
-            }
-            break;
 
-        case 'd':
-            if (snake.xSpeed != -1) {
-                snake.xSpeed = 1;
-                snake.ySpeed = 0;
-            }
-            break;
-
-        case 's':
-            if (snake.ySpeed != -1) {
-                snake.xSpeed = 0;
-                snake.ySpeed = 1;
-            }
-            break;
-
-        case 'w':
-            if (snake.ySpeed != 1) {
-                snake.xSpeed = 0;
-                snake.ySpeed = -1;
-            }
-            break;
-
-        default:
-            break;
-    }
+        if(key=='a' && snake.xSpeed != 1){
+            snake.xSpeed = -1;
+            snake.ySpeed = 0
+        }else if(key=='d' && snake.xSpeed != -1){
+            snake.xSpeed = 1;
+            snake.ySpeed = 0
+        }else if(key=='s' && snake.xYpeed != -1){
+            snake.xSpeed = 0;
+            snake.ySpeed = 1
+        }else if(key=='w' && snake.xypeed != 1){
+            snake.xSpeed = 0;
+            snake.ySpeed = -1;
+        }
 
 }
 
