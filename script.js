@@ -66,30 +66,19 @@ function keyPressed() {
             }
             break;
 
-        case 'd':
-            if (snake.xSpeed != -1) {
-                snake.xSpeed = 1;
-                snake.ySpeed = 0;
-            }
-            break;
-
-        case 's':
-            if (snake.ySpeed != -1) {
-                snake.xSpeed = 0;
-                snake.ySpeed = 1;
-            }
-            break;
-
-        case 'w':
-            if (snake.ySpeed != 1) {
-                snake.xSpeed = 0;
-                snake.ySpeed = -1;
-            }
-            break;
-
-        default:
-            break;
-    }
+        if(key=='a' && snake.xSpeed != 1){
+            snake.xSpeed = -1;
+            snake.ySpeed = 0
+        }else if(key=='d' && snake.xSpeed != -1){
+            snake.xSpeed = 1;
+            snake.ySpeed = 0
+        }else if(key=='s' && snake.xYpeed != -1){
+            snake.xSpeed = 0;
+            snake.ySpeed = 1
+        }else if(key=='w' && snake.xypeed != 1){
+            snake.xSpeed = 0;
+            snake.ySpeed = -1;
+        }
 
 }
 
